@@ -7,10 +7,11 @@
   ); /* for mobile responsiveness */
   grid-template-rows: 100px auto 100px;
   /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
-  /* grid-template-rows: repeat(2, 100px); */
+  /* grid-template-rows: repeat(2, 100px);  Key pair created successfully.
+Fingerprint: 4ED2BE0A8DB38BF271EB1E4303398F3E917D468D */
   /* grid-auto-rows: 100px; makes the rows responsive */
   /* grid-template: repeat(2, 50px) / repeat(2, 2fr); Rows before columns when using grid
-  
+  cardoX007:5b843557fe10519abd46717dd536f2772e186fdb
   justify-content is for rows align-content is for column
   */
 

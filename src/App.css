@@ -1,0 +1,60 @@
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 1fr)
+  ); /* for mobile responsiveness */
+  grid-template-rows: 100px auto 100px;
+  /* grid-template-rows: repeat(auto-fit, minmax(100px, 1fr)); */
+  /* grid-template-rows: repeat(2, 100px); */
+  /* grid-auto-rows: 100px; makes the rows responsive */
+  /* grid-template: repeat(2, 50px) / repeat(2, 2fr); Rows before columns when using grid
+  
+  justify-content is for rows align-content is for column
+  */
+
+  grid-gap: 5px;
+  grid-auto-flow: dense; /* makes the grid fill holes in our  grid layout */
+
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+.App > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffeead;
+}
+
+.header {
+  grid-area: h;
+}
+.menu {
+  grid-area: m;
+}
+.content {
+  grid-area: c;
+  grid-row: auto;
+}
+.footer {
+  grid-area: f;
+}
+
+.App > div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.App > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.App > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.App > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
